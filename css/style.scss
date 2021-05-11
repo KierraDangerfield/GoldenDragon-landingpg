@@ -294,18 +294,21 @@ a.nav-link:hover,
 
 //phone
 @media (max-width: 576px) {
+  .hero {
+    min-height: 0;
+  }
   .logo {
-    max-height: 41px;
+    max-height: 27px;
   }
   .heroFood {
-    max-width: 450px;
+    max-width: 300px;
   }
 
   h1 {
     font-size: 60px;
   }
   .featured {
-    font-size: 45px;
+    font-size: 35px;
   }
   .cater-txt {
     font-size: 60px;
