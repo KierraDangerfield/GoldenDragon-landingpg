@@ -1,0 +1,337 @@
+.primary {
+  color: #f22e2d;
+}
+
+.primary-bg {
+  background-color: #f22e2d;
+}
+
+.white {
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.black {
+  color: black;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+.featured {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.hero {
+  background-image: url("/images/homeHeader.png");
+  background-color: #f22e2d;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 0 !important;
+  min-height: 1100px;
+}
+
+.spicy-noodle {
+  background-image: url("/images/spicyNoodle.png");
+  margin-top: -5%;
+}
+
+.chicken-soup {
+  background-image: url("/images/chickenSoup.png");
+}
+
+.hawaiian {
+  background-image: url("/images/breeze.png");
+}
+
+.strawberry {
+  background-image: url("/images/strwMango.png");
+}
+
+.cater {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(88, 20, 20, 0.3)), to(rgba(88, 20, 20, 0.4))), url("/images/caterContact.png");
+  background-image: linear-gradient(rgba(88, 20, 20, 0.3), rgba(88, 20, 20, 0.4)), url("/images/caterContact.png");
+  background-size: cover;
+  min-height: 605px;
+}
+
+.cater-txt {
+  font-size: 80px;
+}
+
+.img-section {
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+i {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.footer-logo {
+  padding: 15px;
+}
+
+i:hover,
+.footer-nav .nav-item .nav-link:hover {
+  color: #f22e2d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer-nav .nav-item {
+  padding: 15px;
+  text-align: center;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+nav {
+  margin-bottom: -1px;
+}
+
+button {
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 6px gray;
+          box-shadow: 3px 3px 6px gray;
+  font-weight: 600;
+  font-size: large;
+}
+
+.red-btn {
+  border: 2px solid #f22e2d;
+}
+
+.contact-btn {
+  border: 2px solid white;
+  background-color: transparent;
+  -webkit-box-shadow: 3px 3px 6px black;
+          box-shadow: 3px 3px 6px black;
+}
+
+.contact-btn:hover {
+  border: 3px solid #f22e2d;
+  background-color: #f22e2d;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.red-btn:hover {
+  background-color: white;
+  color: #f22e2d;
+  border: 2px solid #f22e2d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.orange-btn {
+  background-color: #ff8000;
+  border: 2px solid #ff8000;
+  -webkit-box-shadow: 3px 3px 6px black;
+          box-shadow: 3px 3px 6px black;
+}
+
+.orange-btn:hover {
+  background-color: white;
+  border: 2px solid white;
+  color: #ff8000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.food-card {
+  background-color: white;
+  padding: 7% 7%;
+}
+
+.cater .col {
+  margin-top: 15%;
+}
+
+.cater {
+  min-height: 500px;
+}
+
+li a,
+li a:hover {
+  color: white;
+}
+
+.logo {
+  max-height: 55px;
+}
+
+.footer-nav {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+.navbar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a.nav-link,
+a.nav-link:hover,
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+/*SCROLL*/
+.js-scroll {
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.slide-left {
+  -webkit-animation: slide-in-left 1s ease-in-out both;
+          animation: slide-in-left 1s ease-in-out both;
+}
+
+.slide-right {
+  -webkit-animation: slide-in-right 1s ease-in-out both;
+          animation: slide-in-right 1s ease-in-out both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .food-card,
+  footer {
+    text-align: center !important;
+  }
+  .navbar-light .navbar-toggler {
+    border-color: white;
+  }
+  .heroFood {
+    width: 700px;
+  }
+  .col-lg-6 {
+    text-align: center;
+  }
+  li.nav-item {
+    text-align: center;
+  }
+  nav {
+    background-color: black !important;
+  }
+  .navbar-dark .navbar-toggler {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+  .navbar-toggler {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  /*.navbar-light .navbar-toggler-icon {
+    background-image: url(
+      data:image/svg + xml;charset=utf-8,
+      %3CsvgviewBox="0 0 30 30"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathstroke="rgba(255, 255, 255, 0.9)"stroke-width="2"stroke-linecap="round"stroke-miterlimit="10"d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E
+    ) !important;
+  }*/
+  .spicy-noodle {
+    margin-top: 0;
+  }
+  .row.pt-5 {
+    padding-top: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-height: 41px;
+  }
+  .heroFood {
+    max-width: 450px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .featured {
+    font-size: 45px;
+  }
+  .cater-txt {
+    font-size: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

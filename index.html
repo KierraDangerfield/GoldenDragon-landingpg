@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Golden Dragon Cafe</title>
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--SASS-->
+    <link rel="stylesheet" href="/css/style.scss" />
+    <!--FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/d981cb8906.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg primary-bg navbar-dark px-5">
+      <div class="container-fluid">
+        <a href="/index.html" class="navbar-brand"
+          ><img
+            src="/images/whiteLogo.png"
+            class="logo"
+            alt="The Golden Dragon Cafe"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--HERO-->
+    <div class="containre-fluid hero">
+      <div class="row pt-5">
+        <div class="col-lg-6 col-xs-12 my-auto ps-5 slide-right order-lg-last">
+          <h1 class="white">Treat Your<br />Taste Buds</h1>
+          <button class="white orange-btn mt-3">Discover</button>
+        </div>
+        <div class="col-lg-6 col-xs-12 ps-5 mt-5 slide-left order-lg-first">
+          <img src="/images/homeFood.png" alt="hero food" class="heroFood" />
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="white text-center featured">Featured Dishes & Cocktails</h1>
+      </div>
+    </div>
+
+    <!--Spicy Curry Noodle Soup-->
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          data-mdb-toggle="animation"
+          data-mdb-animation-start="onScroll"
+          data-mdb-animation-on-scroll="repeat"
+          data-mdb-animation="slide-in-left"
+          class="col-lg-6 col-xs-12 img-section spicy-noodle"
+        ></div>
+        <div
+          data-mdb-toggle="animation"
+          data-mdb-animation-start="onScroll"
+          data-mdb-animation-on-scroll="repeat"
+          data-mdb-animation="slide-in-right"
+          class="col-lg-6 col-xs-12 order-lg-2 order-xs-1 my-auto food-card"
+        >
+          <h2 class="primary">Spicy Curry Noodle Soup</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam
+          </p>
+          <button class="primary-bg white red-btn">View More</button>
+        </div>
+      </div>
+    </div>
+
+    <!--CHICKEN SOUP-->
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-lg-6 col-xs-12 img-section chicken-soup slide-right order-lg-last"
+        ></div>
+
+        <div
+          class="col-lg-6 col-xs-12 my-auto food-card slide-left order-lg-first"
+        >
+          <h2 class="primary">Chicken Soup</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam
+          </p>
+          <button class="primary-bg white red-btn">View More</button>
+        </div>
+      </div>
+    </div>
+    <!--Hawaiian Breeze-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 img-section hawaiian slide-left"></div>
+        <div class="col-lg-6 col-xs-12 my-auto food-card slide-right">
+          <h2 class="primary">Hawaiian Breeze</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam
+          </p>
+          <button class="primary-bg white red-btn">View More</button>
+        </div>
+      </div>
+    </div>
+    <!--STRAWBERRY MANGO-->
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-lg-6 col-xs-12 img-section strawberry slide-right order-lg-last"
+        ></div>
+
+        <div
+          class="col-lg-6 col-xs-12 my-auto food-card slide-left order-lg-first"
+        >
+          <h2 class="primary">Strawberry Mango</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam
+          </p>
+          <button class="primary-bg white red-btn">View More</button>
+        </div>
+      </div>
+    </div>
+
+    <!--CATER YOUR EVENT-->
+    <div class="container-fluid cater">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="white cater-txt">Let Us Cater Your Event</h2>
+          <button class="contact-btn white">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="black-bg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-xs-12 footer-logo">
+            <a href="/index.html"
+              ><img
+                src="/images/whiteLogo.png"
+                class="logo"
+                alt="The Golden Dragon"
+            /></a>
+          </div>
+          <div class="col-lg-4 col-xs-12">
+            <nav class="navbar">
+              <ul class="navbar-nav footer-nav text-center mx-auto">
+                <li class="nav-item">
+                  <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-4 col-xs-12 pt-3">
+            <a href="#"><i class="fab fa-twitter white"></i></a>
+            <a href="#"><i class="fab fa-facebook-f white"></i></a>
+            <a href="#"><i class="fab fa-instagram white"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mx-auto">
+            <p class="white text-center">Copyright 2020 The Golden Dragon</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--BOOTSTRAP JAVASCRIPT-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

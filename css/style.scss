@@ -1,0 +1,313 @@
+//VARIABLES
+$primary: #f22e2d;
+$white: white;
+$black: black;
+$orange: #ff8000;
+
+.primary {
+  color: $primary;
+}
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.white {
+  color: $white;
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.black-bg {
+  background-color: $black;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+.featured {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.hero {
+  background-image: url("/images/homeHeader.png");
+  background-color: $primary;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 0 !important;
+  min-height: 1100px;
+}
+.spicy-noodle {
+  background-image: url("/images/spicyNoodle.png");
+  margin-top: -5%;
+}
+.chicken-soup {
+  background-image: url("/images/chickenSoup.png");
+}
+.hawaiian {
+  background-image: url("/images/breeze.png");
+}
+.strawberry {
+  background-image: url("/images/strwMango.png");
+}
+.cater {
+  //@at-root background-image: url("/images/caterContact.png"),
+  //linear-gradient(rgba(88, 20, 20, 0.35), rgba(88, 20, 20, 0.35));
+  background-image: linear-gradient(
+      rgba(88, 20, 20, 0.3),
+      rgba(88, 20, 20, 0.4)
+    ),
+    url("/images/caterContact.png");
+  background-size: cover;
+  min-height: 605px;
+
+  //  linear-gradient(rgba(88, 20, 20, 0.3), rgba(88, 20, 20, 0.2)), url("https://the-golden-dragon-cafe.netlify.app/static/media/caterContact.4fd46f2e.png")
+}
+
+.cater-txt {
+  font-size: 80px;
+}
+.img-section {
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+i {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.footer-logo {
+  padding: 15px;
+}
+
+i:hover,
+.footer-nav .nav-item .nav-link:hover {
+  color: $primary;
+  transition: 0.3s;
+}
+
+.footer-nav .nav-item {
+  padding: 15px;
+  text-align: center;
+  justify-content: auto;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+nav {
+  margin-bottom: -1px;
+}
+
+//BUTTONS
+
+button {
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px gray;
+  font-weight: 600;
+  font-size: large;
+}
+
+.red-btn {
+  border: 2px solid $primary;
+}
+
+.contact-btn {
+  border: 2px solid $white;
+  background-color: transparent;
+  box-shadow: 3px 3px 6px $black;
+}
+
+.contact-btn:hover {
+  border: 3px solid $primary;
+  background-color: $primary;
+  color: $white;
+  transition: 0.3s;
+}
+
+.red-btn:hover {
+  background-color: $white;
+  color: $primary;
+  border: 2px solid $primary;
+  transition: 0.3s;
+}
+
+.orange-btn {
+  background-color: $orange;
+  border: 2px solid $orange;
+  box-shadow: 3px 3px 6px $black;
+}
+
+.orange-btn:hover {
+  background-color: $white;
+  border: 2px solid $white;
+  color: $orange;
+  transition: 0.3s;
+}
+
+.food-card {
+  background-color: $white;
+  padding: 7% 7%;
+  //box-shadow: -2px 3px 9px rgba(0, 0, 0, 0.16);
+}
+.cater .col {
+  margin-top: 15%;
+}
+.cater {
+  min-height: 500px;
+}
+li a,
+li a:hover {
+  color: $white;
+}
+
+.logo {
+  max-height: 55px;
+}
+
+.footer-nav {
+  flex-direction: row !important;
+}
+
+.navbar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a.nav-link,
+a.nav-link:hover,
+.navbar-dark .navbar-nav .nav-link {
+  color: $white;
+}
+
+/*SCROLL*/
+.js-scroll {
+  //opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  // opacity: 1;
+}
+
+//slide
+.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+//desktop
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    flex: none;
+  }
+}
+
+//mobile
+@media (max-width: 991px) {
+  .food-card,
+  footer {
+    text-align: center !important;
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: $white;
+  }
+
+  .heroFood {
+    width: 700px;
+  }
+
+  .col-lg-6 {
+    text-align: center;
+  }
+
+  li.nav-item {
+    text-align: center;
+  }
+
+  nav {
+    background-color: $black !important;
+  }
+
+  .navbar-dark .navbar-toggler {
+    color: $white;
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .navbar-toggler {
+    box-shadow: none;
+  }
+
+  /*.navbar-light .navbar-toggler-icon {
+    background-image: url(
+      data:image/svg + xml;charset=utf-8,
+      %3CsvgviewBox="0 0 30 30"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathstroke="rgba(255, 255, 255, 0.9)"stroke-width="2"stroke-linecap="round"stroke-miterlimit="10"d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E
+    ) !important;
+  }*/
+
+  .spicy-noodle {
+    margin-top: 0;
+  }
+  .row.pt-5 {
+    padding-top: none;
+  }
+}
+
+//phone
+@media (max-width: 576px) {
+  .logo {
+    max-height: 41px;
+  }
+  .heroFood {
+    max-width: 450px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  .featured {
+    font-size: 45px;
+  }
+  .cater-txt {
+    font-size: 60px;
+  }
+}
