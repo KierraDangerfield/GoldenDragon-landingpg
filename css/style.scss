@@ -243,6 +243,11 @@ a.nav-link:hover,
 
 //mobile
 @media (max-width: 991px) {
+  .hero .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   .food-card,
   footer {
     text-align: center !important;
@@ -316,8 +321,8 @@ a.nav-link:hover,
   .cater {
     min-height: 350px;
   }
-  .row {
-    margin-right: 0;
-    margin-left: 0;
+
+  .hero-txt {
+    padding-left: 0 !important;
   }
 }
